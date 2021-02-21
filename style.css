@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+/* BODY STYLE */
+
+body{
+    display: flex;
+    align-content: center;
+    min-height: 100vh;
+}
+
+body.clouds{
+    background: linear-gradient(107.56deg, rgb(50, 55, 105),rgb(130, 232, 255));
+}
+
+body.thunderstorm{
+    background: linear-gradient(107.56deg,rgba(28, 0, 22, 1),rgba(38, 43, 94, 1) );
+}
+
+body.drizzle{
+    background: linear-gradient(107.56deg,rgba(8, 13, 56, 1),rgba(231, 233, 246, 1) );
+}
+
+body.rain{
+    background: linear-gradient(107.56deg,#000216,#82E8FF );
+}
+
+body.snow{
+    background: linear-gradient(107.56deg, rgba(131, 180, 255, 1),rgba(255, 255, 255, 1) );
+}
+
+body.fog{
+    background: linear-gradient(107.56deg, rgba(122, 129, 152, 1),rgba(254, 254, 255, 1) );;
+}
+
+body.clear{
+    background: linear-gradient(107.56deg, rgba(255, 157, 41, 1),rgba(255, 249, 99, 1) );
+}
+
+/* IMAGE STYLE */
+
+img {
+    width: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*CONTAINER STYLE */
+
+.container1{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container2{
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+/* TEXT STYLE */
+
+body.clear, body.clouds, body.thunderstorm, body.drizzle, body.rain, h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 9vh;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 10;
+}
+
+body.fog, body.snow h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 9vh;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    font-weight: 10;
+}
+
+body.clear, body.clouds, body.thunderstorm, body.drizzle, body.rain, p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.5vh;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 4% ;
+    padding-bottom: 12%;
+    text-transform: lowercase;
+}
+
+body.snow, body.fog p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.5vh;
+    color: rgba(60, 60, 60, 0.8);
+    padding-top: 4% ;
+    padding-bottom: 12%;
+    text-transform: lowercase;
+}
+
+body.clear, body.clouds, body.thunderstorm, body.drizzle, body.rain, h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16vh;
+    color: #ffffff;
+    font-weight: 1;
+}
+
+body.snow, body.fog h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16vh;
+    color: #3C3C3C;
+    font-weight: 1;
+}
